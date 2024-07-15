@@ -1,0 +1,35 @@
+<!-- app/views/layouts/application.html.erb -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WalkerRails</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+  <body>
+    <nav class="container mx-auto px-5 mt-5">
+      <ul class="flex space-x-4">
+        <li><%= link_to 'Home', root_path %></li>
+        <% if admin_signed_in? %>
+          <li><%= link_to 'Admin Dashboard', admin_dashboard_path %></li>
+          <li><%= button_to 'Logout', destroy_admin_session_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to 'Admin Login', new_admin_session_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+
+    <div class="container mx-auto mt-5">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
+
+    <main class="container mx-auto mt-28 px-5 flex">
+      <%= yield %>
+    </main>
+  </body>
+</html>
