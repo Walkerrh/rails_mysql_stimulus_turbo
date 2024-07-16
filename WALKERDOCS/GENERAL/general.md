@@ -589,3 +589,11 @@ POST /posts: create action to submit data for creating a new post.
 GET /posts/:id/edit: edit action to display a form for editing a post.
 PATCH/PUT /posts/:id: update action to submit data for updating a post.
 DELETE /posts/:id: destroy action to delete a post.
+
+
+
+
+
+on linux - sudo apt-get install graphviz
+Add gem 'rails-erd', group: :development to your application's Gemfile
+Run bundle exec erd
