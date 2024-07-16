@@ -2,7 +2,7 @@
 
 # Linux distribution
 
-- **WSL (Windows Subsystem for Linux)**: A compatibility layer for running Linux binary executables natively on Windows. It allows users to run a Linux distribution directly on Windows without the need for a virtual machine or dual-boot setup.
+- **WSL (Windows Subsystem for Linux) (\\Wsl$\Ubuntu)**: A compatibility layer for running Linux binary executables natively on Windows. It allows users to run a Linux distribution directly on Windows without the need for a virtual machine or dual-boot setup.
 
 # Package Managers
 
