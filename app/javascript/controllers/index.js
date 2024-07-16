@@ -9,3 +9,7 @@ eagerLoadControllersFrom("controllers", application)
 // Lazy load controllers as they appear in the DOM (remember not to preload controllers in import map!)
 // import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading"
 // lazyLoadControllersFrom("controllers", application)
+
+// Ensure the product upload controller is loaded
+import ProductUploadController from "./product_upload_controller"
+application.register("product-upload", ProductUploadController)

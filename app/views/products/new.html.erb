@@ -1,0 +1,14 @@
+<!-- app/views/products/new.html.erb -->
+
+<%= form_with url: products_path, multipart: true, local: true, data: { controller: "product-upload", action: "turbo:submit-end->product-upload#handleSuccess" } do |form| %>
+  <div class="mb-4">
+    <%= form.label :file, "Upload an .xls file", class: "block text-sm font-medium text-gray-700" %>
+    <%= form.file_field :file, class: "mt-1 block w-full" %>
+  </div>
+
+  </br>
+  
+  <div>
+    <%= form.submit "Upload", class: "inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-black bg-indigo-600 hover:bg-indigo-700" %>
+  </div>
+<% end %>

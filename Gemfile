@@ -58,6 +58,8 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  # 
+  gem 'rails-erd'
 end
 
 group :test do
@@ -77,3 +79,6 @@ gem 'webpacker'
 
 # 
 gem 'devise'
+
+gem 'roo'
+gem 'roo-xls'

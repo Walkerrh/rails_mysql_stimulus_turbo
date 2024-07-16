@@ -325,3 +325,19 @@ rails db:migrate
 rails generate controller Admin::Dashboard index
 
 rails generate devise:views
+
+
+
+
+
+
+
+
+
+
+git init
+git add .
+git commit -m "Initial Commit"
+git remote add origin https://github.com/Walkerrh/rails_mysql_stimulus_turbo.git
+git branch -M maincd
+git push -u origin main
